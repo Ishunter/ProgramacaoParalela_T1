@@ -4,7 +4,7 @@
 OUTPUT="resultados"					# Arquivo de saida
 VEZES="3"							# Quantas repetições cada thread vai fazer
 THREADS="10"						# Fazer de 1 até quantas threads?
-NUMERO="10000000"					# Numero a ser visto os Primos
+NUMERO="100000000"					# Numero a ser visto os Primos
 
 (
 echo "De 2 até $NUMERO"
