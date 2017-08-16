@@ -13,6 +13,15 @@ http://www.openmp.org/<br />
 As configurações de entrada (input) e saída (output) estão dentro no run.sh
 
 ```
+OUTPUT="resultados"					# Arquivo de saida
+VEZES="3"							# Quantas repetições cada thread vai fazer
+THREADS="10"						# Fazer de 1 até quantas threads?
+NUMERO="100000000"					# Numero a ser visto os Primos (FIM)
+```
+
+Execução individual:
+
+```
 ./Crivo_Sequencial
 	Entrada: int FIM
 		FIM é o número limite a ser verificado os números primos de 2 até FIM
@@ -23,6 +32,8 @@ As configurações de entrada (input) e saída (output) estão dentro no run.sh
 		nThread é o número de threads a serem utilizadas
 		FIM é o número limite a ser verificado os números primos de 2 até FIM
 ```
+
+
 
 Os números primos estão sendo armazenados em uma variável int, então FIM não pode ser maior do que o limite da variável, alterando o tipo para long pode aumentar este limite mais também aumente significativamente o tempo de execução.
 
@@ -45,7 +56,7 @@ sh run.sh
 ## Resultados
 
 ```
-Com 8 Threads				Quantidade de Primos
+Com 8 Threads					Quantidade de Primos
 10⁸		0m5.722s			5,761,455
 10⁹		2m11.397s			50,874,534
 10¹⁰		3m36.136s 			455,052,511	(achou só 70,462,980)
