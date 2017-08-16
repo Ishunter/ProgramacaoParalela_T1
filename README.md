@@ -14,7 +14,7 @@ As configurações de entrada (input) e saída (output) estão dentro no run.sh
 
 ```
 OUTPUT="resultados"					# Arquivo de saida
-VEZES="3"							# Quantas repetições cada thread vai fazer
+VEZES="3"						# Quantas repetições cada thread vai fazer
 THREADS="10"						# Fazer de 1 até quantas threads?
 NUMERO="100000000"					# Numero a ser visto os Primos (FIM)
 ```
